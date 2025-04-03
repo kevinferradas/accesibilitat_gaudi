@@ -41,6 +41,10 @@
     width: var(--width-content);
     margin: 0 auto;
 
+    #gaudi,#CasaBatllo {
+        display: none;
+    }
+
 }
 
 .fondo-color {
