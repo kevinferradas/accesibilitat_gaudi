@@ -5,26 +5,33 @@ El modelo te debe servir como referencia. -->
 
 <!DOCTYPE html>
 <!-- atributo del idioma -->
+<html lang="es">
+
 <html>
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css">
+        <title>Casa Batlló</title>
+        
+    
     </head>
 
     <body>
 
-        <div class="fondo-color h">               
+        <header class="fondo-color h">               
              <a href="#antonio-gaudi" id="skip-link">
                     saltar al contenido principal</a
                 >
                 
             <div class="width-content">
-                <p id="inicio" class="p1">Casa Batlló</p>
-                <p class="p2">
+                <p id="inicio" class="p1" tabindex="0">Casa Batlló</p>
+                <p class="p2" tabindex="0">
                     Una obra maestra de la arquitectura modernista
                 </p>
-
+            <div>    
+        </header>
+        <nav>
                 <div class="width-content">
                     <ul>
                         <li><a href="#antonio-gaudi">ANTONIO GAUDÍ</a></li>
@@ -34,18 +41,22 @@ El modelo te debe servir como referencia. -->
                         <li><a href="#su-opinion">SU OPINIÓN</a></li>
                     </ul>
                 </div>
+        </nav>
 
+        <main>
                 <!-- Las imagenes llevaran su texto alternativo correspondiente -->
                 <!-- Pero debes ponerlo tú -->
 
-                <picture >
+                <picture tabindex="0">
                     <source
                         media="(max-width: 500px)"
                         srcset="img/346983-Casa-Batllo-500.avif"
+                        alt="Acceso a Casa Batlló."
                     />
                     <source
                         media="(max-width: 800px)"
                         srcset="img/346983-Casa-Batllo-800.avif"
+                        alt="Acceso a Casa Batlló."
                     />
                     <img
                         class="imagendiv"
@@ -53,17 +64,18 @@ El modelo te debe servir como referencia. -->
                         alt="Acceso a Casa Batlló."
                     />
                 </picture>
-            </div>
-        </div>
+            
+        
 
-        <div class="width-content m">
-            <section id="antonio-gaudi">
-                <p class="p2">Antoni Gaudí</p>
+        <section class="width-content m">
+            <section  id="antonio-gaudi">
+                <p  tabindex="0" class="p2">Antoni Gaudí</p>
                 <div>
                     <img
                         src="img/Antoni_Gaudi_1878.avif"
                         alt="Antonio Gaudí, arquitecto catalán"
-                        aria-labelledby="gaudi"                        
+                        aria-labelledby="gaudi"    
+                        tabindex="0"                    
                     />
                     <p id="gaudi">
                         La imagen muestra el retrato más famoso de Antonio Gaudí, 
@@ -116,9 +128,9 @@ El modelo te debe servir como referencia. -->
                         capturando tanto su exterior como la energía interior de este genio creativo.
 
                     </p>
-                <div>
-                        
-                        <p >
+                
+                    <div>        
+                        <p tabindex="0">
                             Gaudí fue un arquitecto con un sentido innato de la
                             geometría y el volumen, así como una gran capacidad
                             imaginativa que le permitía proyectar mentalmente la
@@ -141,16 +153,16 @@ El modelo te debe servir como referencia. -->
                             tratamiento de los materiales, como su famoso
                             trencadís hecho con piezas de cerámica de desecho.
                         </p>
-                       
-                    </div>
+                    </div>      
                 </div>
+                
             </section>
 
             <section id="el-edificio">
-                <p class="p2">El edificio</p>
+                <p class="p2" tabindex="0">El edificio</p>
                 <div>
-                    <div>
-                        <p >
+                    <div tabindex="0">
+                        <p>
                             La Casa Batlló es un reflejo de la plenitud
                             artística de Gaudí: pertenece a su etapa naturalista
                             (primera década del siglo XX), periodo en que el
@@ -190,6 +202,7 @@ El modelo te debe servir como referencia. -->
                         src="img/fachada-590x760.avif"
                        alt=" Casa Batlló,  es un edificio obra del arquitecto catalán Antoni Gaudí "
                        aria-labelledby="CasaBatllo"
+                       tabindex="0"
                     />
                     <p id="CasaBatllo">
                         La imagen muestra la fachada de la Casa Batlló, una de las obras más
@@ -254,18 +267,20 @@ El modelo te debe servir como referencia. -->
             </section>
 
             <section id="galeria">
-                <p class="p2">Galería de imágenes</p>
-                <div class="galeria-fotos">
+                <p class="p2" tabindex="0" >Galería de imágenes</p>
+                <div class="galeria-fotos" >
                     <img
                         src="img/salon.avif"
                         alt="Vista del salón principal de la Casa Batlló, con sus paredes curvas,
                          techos ornamentados, y detalles modernistas en colores suaves."
-
+                        tabindex="0"
                         
                     />
 
                     <img
                         src="img/detall.avif"
+                        tabindex="0"
+                        alt = "techo"
                         
                     />
 
@@ -275,6 +290,7 @@ El modelo te debe servir como referencia. -->
                         que resalta entre las superficies orgánicas y curvas. El espacio transmite 
                         una sensación de frescura y armonía, con detalles modernistas que complementan
                          la arquitectura fluida y natural de Gaudí."
+                         tabindex="0"
 
                         
                     />
@@ -285,7 +301,7 @@ El modelo te debe servir como referencia. -->
                         una marina, con líneas onduladas y formas que imitan el movimiento del agua. 
                         Las chimeneas de formas orgánicas y la barandilla de hierro forjado refuerzan 
                         el estilo fluidamente natural y modernista de Gaudí."
-
+                        tabindex="0"
                     />
                     <div class="volver-inicio">
                         <a href="#inicio">Volver al inicio &#8593;</a>
@@ -294,14 +310,16 @@ El modelo te debe servir como referencia. -->
             </section>
 
             <section id="el-modernismo">
-                <p class="p2">El modernismo</p>
+                <p class="p2" tabindex="0" >El modernismo</p>
                 <div>
                     <img
                         src="img/casa_mila.avif"
+                        alt = "Imagen de la Pedrera en plano contrapicado"
+                        tabindex="0"
                        
                     />
                     <div>
-                        <p >
+                        <p tabindex="0">
                             El modernismo rechaza el estilo poco atractivo de la
                             arquitectura industrial de la primera mitad del
                             siglo XIX, y desarrolla nuevos conceptos
@@ -332,30 +350,44 @@ El modelo te debe servir como referencia. -->
                     </div>
                 </div>
             </section>
-        </div>
+        </section>    
+        </main>
 
-        <footer class="fondo-color">
+        <footer class="fondo-color" >
             <div class="width-content">
                 <div id="su-opinion">
-                    <form>
+                    <form name="formOpinion">
                         <fieldset>
-                            <legend >
+                            <legend tabindex="0">
                                 Por favor denos su opinión
                             </legend>
-                            <p class="p-fieldset" >
+                            <p class="p-fieldset" tabindex="0">
                                 Es necesario rellenar todos los campos
                             </p>
                            
-                           Su nombre:*<input
+                            <label for= "nombre">Su nombre*:</label>
+
+                           <input
                                     type="text"
+                                    id = "nombre"
+                                    name = "nombre"
                                     required
+                                    aria-required="true"
                                     
                             />
-                           Su opinión:*<input
+                            <p id="errorNombre"></p>
+
+                            <label for= "opinion">Su opinión*:</label>
+                            <input
                                     type="text"
+                                    id = "opinion"
+                                    name = "opinion"
                                     required
+                                    aria-required="true"
                                     
                             />
+                            <p id="errorOpinion"></p>
+
 
                             <div>
                                 <button class="boton" >
@@ -366,34 +398,72 @@ El modelo te debe servir como referencia. -->
                     </form>
                 </div>
                 <div class="redes-sociales">
-                    <p >Nuestras redes sociales</p>
+                    <p tabindex="0">Nuestras redes sociales</p>
                     <div>
                         <!-- Utilizaremos los aria label para que se indique la informacion del enlace -->
                         <a href="https://facebook.com" target="_blank"
                             ><img
                                 class="redes"
                                 src="img/c_facebook.png"
+                                alt="iconoFacebook"
+                            
                               
                         /></a>
                         <a href="https://instagram.com" target="_blank"
                             ><img
                                 class="redes"
                                 src="img/c_instagram.png"
+                                alt="iconoInstagram"
                                
                         /></a>
                         <a href="https://youtube.com" target="_blank"
                             ><img
                                 class="redes"
                                 src="img/c_youtube.png"
+                                alt="iconoYoutube"
                                
                         /></a>
                     </div>
-                    <p >
+                    <p tabindex="0">
                         &#169;Pon aquí tu nombre
                     </p>
                     
                 </div>
             </div>
         </footer>
+        <script>
+
+            const formOpinion = document.forms["formOpinion"]
+            const errorNombre = document.querySelector('#errorNombre')
+            const errorOpinion = document.querySelector('#errorOpinion')
+    
+    
+           let inputNombre = formOpinion["nombre"]
+           let inputOpinion = formOpinion["opinion"]
+
+           
+           inputNombre.addEventListener('change', () => {
+    
+                let nombre = inputNombre.value.trim()
+                if(nombre.length == 0){
+                    errorNombre.innerHTML ="<span style ='color :red '> Debes escribir un nombre válido </span>"
+                    inputNombre.setAttribute('aria-describedby',"errorNombre");
+                    inputNombre.focus()
+                }
+            })
+
+            inputOpinion.addEventListener('change', () => {
+    
+                let opinion = inputOpinion.value.trim()
+                if(opinion.length == 0){
+                    errorOpinion.innerHTML ="<span style ='color :red '> Debes escribir una opinión válida </span>"
+                    inputOpinion.setAttribute('aria-describedby',"errorOpinion  ");
+                    inputOpinion.focus()
+                }
+            })
+    
+    
+    
+        </script>
     </body>
 </html>
